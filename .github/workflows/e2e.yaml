@@ -1,8 +1,8 @@
 name: E2E Tests
 
 on:
-    - workflow_dispatch
-    - workflow_call
+    workflow_dispatch:
+    workflow_call:
 
 jobs:
     e2e-tests:
@@ -11,7 +11,7 @@ jobs:
             - name: Checkout
               uses: actions/checkout@v4
               with:
-                repository: Marm485/gh-actions-course
+                repository: Marm485/github-actions-course-example-e2e
                 ref: main
             - name: Setup node
               uses: actions/setup-node@v3
