@@ -1,7 +1,8 @@
 name: E2E Tests
 
 on:
-    workflow_dispatch:
+    - workflow_dispatch
+    - workflow_call
 
 jobs:
     e2e-tests:
